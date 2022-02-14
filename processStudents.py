@@ -62,7 +62,7 @@ Value= student_dict[gpa]
 
     #check if the GPA is below 3.0. If so, write the record to the outfile
 
-for stud_id <= 3:
+for student_dict["stud_id"] = 3:
 
 
     
