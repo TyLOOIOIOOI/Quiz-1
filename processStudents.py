@@ -22,9 +22,22 @@ through the logic of the problem.
 
 import csv
 
+Grade = open ("students.csv", "r")
+
+outfile = open ("processedStudents.csv", "w")
+
+Grade_file = csv.reader(Grade, delimiter= ',')
+
+outfile.close()
 
 # create a file object to open the file in read mode
+##def main(): 
+    #studentgrade = open('students.csv', 'r')
 
+    #file_contents = studentgrade.read()
+    #print(file_contents)
+
+#main()
 
 
 # create a csv object from the file object
@@ -39,13 +52,23 @@ import csv
 
 #create a new dictionary named 'student_dict'
 
+student_dict = []
+
+Key= student_dict["stud_id"]
+Value= student_dict[gpa]
 
 
 #use a loop to iterate through each row of the file
 
     #check if the GPA is below 3.0. If so, write the record to the outfile
+
+for stud_id <= 3:
+
+
     
-        
+for key,value in student_dict():
+    print(key)
+    print(value)
 
 
 
@@ -61,13 +84,14 @@ import csv
 
 
 #Print the student id 
-
+print(stud_id)
 
 #print out the corresponding GPA from the dictionary
 
 
 
 #close the outfile
+outfile.close()
 
 
 
